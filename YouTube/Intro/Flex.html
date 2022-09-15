@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    Flexbox
+  </title>
+  <style>
+    input {
+      border: none;
+      border-radius: 20px;
+      box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.093);
+      width: 300px;
+      height: 34px;
+      font-family: Arial, Helvetica, sans-serif;
+      padding-left: 20px;
+      font-size: 20px;
+
+    }
+
+    input::placeholder {
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    img {
+      border-radius: 70%;
+      width: 50px;
+    }
+
+    .head {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: aqua;
+      align-items: center;
+      border-radius: 60px;
+    }
+
+    .one {
+
+      width: 100px;
+    }
+
+    .two {
+
+      flex: 1;
+      align-items: center;
+      margin-left: 40px;
+      margin-right: 40px;
+      align-items: center;
+      max-width: 800px;
+
+    }
+
+    .three {
+
+      width: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="head">
+    <div class="one"><img src="Images/download.png" alt="google"></div>
+    <div class="two"><input type="text" placeholder="Search"></div>
+    <div class="three"><img src="Images/download.jpg" alt="settigs"></div>
+  </div>
+</body>
+
+</html>
