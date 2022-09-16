@@ -3,6 +3,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   row-gap: 50px;
   column-gap: 16px;
+  
 }
 .each-video{
   width: 100%;
@@ -38,7 +39,7 @@
 
 }
 .profile{
-  width: 50px;
+  width: 46px;
   height: 100%;
 }
 .profile-pic{
@@ -57,7 +58,7 @@
 }
 .title{
   font-family: Roboto;
-  font-size: 16px;
+  font-size: 15px;
   width: 100%;
   font-weight: 600;
 }
@@ -81,8 +82,9 @@
 body{
    padding-top: 70px;
    padding-bottom: 3000px;
-   padding-left: 110px;
+   padding-left: 125px;
    padding-right: 20px;
+   background-color: rgb(239, 239, 239);
 }
 
 
