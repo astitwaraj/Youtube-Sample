@@ -2,11 +2,20 @@
   display: flex;
   flex-direction: row;
   margin-bottom: 20px;
-  height: 52px;
+  height: 57px;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom-style: solid;
+  border-bottom-width: 0.5px;
+  background-color: white;
+  border-bottom-color: rgba(177, 177, 177, 0.83);
+  z-index: 1;
 }
 .lsec{
-  width: 175px;
+  width: 250px;
   display: flex;
   align-items: center;
 }
@@ -28,14 +37,15 @@
 .sbox{
   border-radius: 2px;
   flex: 1;
-  height: 33px;
+  height: 34px;
   border-color: gray;
   border-width: 1px;
   box-shadow: inset 2px 2px 2.75px rgba(0, 0, 0, 0.05);
   border-style: solid;
   font-family: Roboto;
   font-size: 16px;
-  padding-left: 10px;
+  font-weight: 500;
+  padding-left: 3px;
   max-width: 500px;
   width: 0;
 
@@ -44,7 +54,8 @@
   font-family: Roboto;
   font-size: 16px;
   color: grey;
-  padding-left: 10px;
+  padding-left: 3px;
+  font-weight: 400;
 }
 .sbut{
   height: 38px;
@@ -68,7 +79,7 @@
   margin-top: 2px;
 }
 .rsec{
-  width: 220px;
+  width: 180px;
   display: flex;
   flex-shrink: 0;
   justify-content: space-between;
@@ -82,6 +93,27 @@
 .noti{
   width: 28px;
 }
+.bellm{
+  position: relative;
+}
+.bell{
+  font-family: Roboto;
+  font-size: 12px;
+  color:white;
+  position: absolute;
+  background-color: red;
+  width: 14px;
+  height: 14px;
+  border-radius:50%;
+  text-align: center;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  top: 2px;
+  right: -2px;
+}
+
 .app{
   width: 28px;
 }
