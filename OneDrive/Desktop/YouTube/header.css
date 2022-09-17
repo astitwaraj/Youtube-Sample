@@ -40,15 +40,16 @@
   flex: 1;
   height: 37px;
   border-color: gray;
-  border-width: 1px;
-  box-shadow: inset 2px 2px 2.75px rgba(0, 0, 0, 0.05);
-  border-style: solid;
+  box-shadow: 0px 0px 2.55px -2px rgba(0, 0, 0, 0.2);
   font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
   padding-left: 3px;
   max-width: 520px;
   width: 0;
+  border-style: solid;
+  border-color: rgb(236, 236, 236);
+  border-width: 00.5px;
 
 }
 .sbox::placeholder{
@@ -59,18 +60,44 @@
   font-weight: 400;
 }
 .sbut{
-  height: 40px;
+  height: 40.5px;
   width: 62px;
   margin-right: 7px;
   border-color: gray;
   border-width: 1px;
-  box-shadow: inset 2px 2px 2.75px rgba(0, 0, 0, 0.05);
-  border-style: solid;
+  border: none;
+  border-radius: 2px;
+  display: flex;
+  position: relative;
+ 
+}
+.sbut,.mbut,.upload, .bellm{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sbut .toolkit, .mbut .toolkit, .upload .toolkit, .bellm .toolkit{
+  background-color:rgba(0, 0, 0, 0.5);
+  position:absolute;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: white;
+  border-radius: 2px;
+  font-family: roboto;
+  bottom: -35px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  font-size: 11px;
+  font-weight: 500;
+}
+.sbut:hover .toolkit, .mbut:hover .toolkit, .upload:hover .toolkit, .bellm:hover .toolkit{
+  opacity: 1;
 }
 .srch{
   width: 25px;
-  margin-top: 2px;
-  
 }
 .mbut{
   height: 38px;

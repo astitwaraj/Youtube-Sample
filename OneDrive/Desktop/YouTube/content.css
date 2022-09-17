@@ -1,9 +1,28 @@
 .content{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
   row-gap: 50px;
   column-gap: 16px;
+}
+@media (max-width:500px) {
+  .content{
+    grid-template-columns: 1fr;
+  }
   
+}
+@media (min-width:501px) and (max-width:869px) {
+  .content{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width:1150px) {
+  .content{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media (min-width:870px) and (max-width:1149px) {
+  .content{
+    grid-template-columns:1fr 1fr 1fr;
+  }
 }
 .each-video{
   width: 100%;
@@ -80,7 +99,7 @@
 
 }
 body{
-   padding-top: 70px;
+   padding-top: 75px;
    padding-bottom: 3000px;
    padding-left: 125px;
    padding-right: 20px;
